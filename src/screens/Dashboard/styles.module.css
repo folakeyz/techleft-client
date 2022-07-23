@@ -1,0 +1,107 @@
+.dashboardFlex {
+    display: flex;
+    gap: 2rem;
+}
+
+.cardFlex {
+    display: flex;
+    flex: 0.5;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* padding: 1rem; */
+}
+
+.calendar {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: center; */
+}
+
+
+@media screen and (min-width: 1300px) and (max-width: 1700px) {
+    .cardFlex {
+        flex: 0.6;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .calendar {
+        flex: 0.4;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .cardFlex {
+        flex: 0.6;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .calendar {
+        flex: 0.4;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .cardFlex {
+        flex: 0.6;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .calendar {
+        flex: 0.4;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cardFlex {
+        flex: 0.6;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .calendar {
+        flex: 0.4;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .cardFlex {
+        flex: 0.6;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .calendar {
+        flex: 0.4;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .dashboardFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardFlex {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .dashboardFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardFlex {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
+}

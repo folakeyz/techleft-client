@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --techleft: #35434C;
+  --techleftblue: #206CB7;
+  --techleftred: crimson;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+.required {
+  font-size: 20px;
+  color: crimson;
+  margin-left: .5rem;
+}
+
+
+
+.techleft__InputFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: left; */
+}
+
+.test__InputFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: left; */
+}
+
+.md {
+  flex-basis: 50%;
+}
+
+.lg {
+  flex-basis: 100%;
+}
+
+.formPadding {
+  padding: 0 10rem;
+}
+
+.test__InputContainer {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+  padding: 1rem 2rem;
+}
+
+.form__InputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.frm {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid gainsboro;
+  padding: .5rem 2rem;
+  outline: none;
+  margin-right: 1rem;
+  background: none;
+  border-radius: 8px;
+}
+
+.form__InputContainer input {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid gainsboro;
+  padding: .5rem 2rem;
+  outline: none;
+  margin-right: 1rem;
+  background: none;
+  border-radius: 8px;
+}
+
+.form__InputContainer select {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid gainsboro;
+  padding: .5rem 2rem;
+  outline: none;
+  margin-right: 1rem;
+  background: none;
+  border-radius: 8px;
+}
+
+.form__InputContainer textarea {
+  width: 100%;
+  height: 6rem;
+  outline: none;
+  border: 1px solid gainsboro;
+  padding: .5rem 2rem;
+  outline: none;
+  margin-right: 1rem;
+  background: none;
+  border-radius: 8px;
+}
+
+.gray {
+  background: #C4C4C433;
+}
+
+.input__IconContainer {
+  display: flex;
+  background: #C4C4C433;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.input__IconContainer input {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  padding: .5rem 2rem;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  background: none;
+  border: none;
+}
+
+.input__IconContainer datalist {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  padding: .5rem 2rem;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  background: none;
+  border: none;
+}
+
+.test__InputContainer label {
+  font-size: 13px;
+  margin-left: .3rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+
+.test__InputContainer input:read-only {
+  background: whitesmoke
+}
+
+.input__IconContainer select {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: none;
+  background: none;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+
+}
+
+.input__IconContainer textarea {
+  width: 100%;
+  height: 7rem;
+  outline: none;
+  border: none;
+  padding: .5rem 1.5rem;
+  border-radius: 10px;
+  background: none;
+}
+
+.input__IconContainer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__IconContainer input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.input__IconContainer input[type="radio"]:checked {
+  background-color: #FFCC00;
+}
+
+
+.input__IconContainer button {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.test__InputContainerSM button {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.most__RadioContainer {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: .5rem;
+  padding: 1rem 0;
+}
+
+.btn {
+  outline: none;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.4rem;
+}
+
+.btnSM {
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.btnTable svg {
+  margin-right: .5rem;
+}
+
+.btnTable {
+  outline: none;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 13px;
+}
+
+.btn svg {
+  margin: 0 .5rem;
+}
+
+.loading {
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner3 800ms ease infinite;
+}
+
+@keyframes spinner3 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button:disabled {
+  background: whitesmoke;
+  color: black;
+  cursor: not-allowed;
+}
+
+.color1 {
+  background: var(--techleft);
+  color: white;
+  transition: .3s;
+}
+
+.color1:hover {
+  /* border: 3px solid gold; */
+  animation: pulse 1s infinite;
+  transition: .3s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+.color2 {
+  background: var(--techleftblue);
+  color: white;
+}
+
+
+.color3 {
+  background: var(--techleftred);
+  color: white;
+}
+
+.danger {
+  color: crimson;
+}
+
+
+.blue {
+  background: #2553FF;
+  color: white;
+}
+
+.yellow {
+  background: #FFC423;
+  color: black;
+}
+
+.appContainer {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  padding: 0;
+  background: white;
+}
+
+.contentsRight {
+  flex-grow: 1;
+  padding: .5rem 2rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex: 0.95;
+  background: #D9D9D959;
+
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.techleft__btnContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+  padding: .5rem 2rem;
+}
+
+.techleft__btnContainer button {
+  height: 3rem;
+  outline: none;
+  padding: .5rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding {
+  padding: .5rem 2rem;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+  .appContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
+
+  .contentsRight {
+    flex: 0.8;
+  }
+
+  .techleft__InputFlex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .appContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
+
+  .contentsRight {
+    flex: 0.7;
+  }
+
+  .techleft__InputFlex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .appContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+
+  .techleft__InputFlex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .appContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+
+  .techleft__InputFlex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .appContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+
+  .techleft__InputFlex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .md {
+    flex-basis: 100%;
+  }
+
+}

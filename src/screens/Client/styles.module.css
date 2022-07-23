@@ -1,0 +1,7 @@
+.clientProfile {
+    display: flex;
+    background: white;
+    padding: 1rem;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}

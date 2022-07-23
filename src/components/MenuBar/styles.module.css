@@ -1,0 +1,26 @@
+.menubar {
+    display: flex;
+    padding: .5rem;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.menu:hover {
+    background: var(--techleft);
+    border-bottom: 2px solid goldenrod;
+    color: white;
+    transform: scale(1.1);
+}
+
+.active {
+    background: var(--techleft);
+    border-bottom: 2px solid goldenrod;
+    color: white;
+}

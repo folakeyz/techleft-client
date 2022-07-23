@@ -1,0 +1,38 @@
+.container {
+    padding: 0rem;
+    margin-bottom: 1rem;
+}
+
+.greet {
+    display: flex;
+    padding: 1rem 2rem;
+    background: white;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.text span {
+    color: crimson;
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img img {
+    max-height: 7rem;
+    object-fit: contain;
+}

@@ -1,0 +1,218 @@
+.app {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    padding: 0;
+    flex-direction: column;
+    /* justify-content: center; */
+    background: linear-gradient(200deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+    /* , url('../../assets/logo.png'); */
+    background-size: contain;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background: #206CB7;
+    color: white;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 0.35;
+}
+.formContainerLg {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+.formContainerLg select{
+color: black;
+}
+
+.lg {
+    flex: 0.5;
+}
+
+.formContainer h3 {
+    color: var(--techleft);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.formContainer p {
+    margin-bottom: 1rem;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.center {
+    display: flex;
+    justify-content: flex-start;
+}
+.padding {
+    padding: .5rem 2rem;
+  }
+
+@media screen and (max-width: 1300px) {
+    .app {
+        padding: 0;
+    }
+
+    .loginContainer {
+        flex-direction: row;
+        height: cal(100vh - 10rem);
+        border-radius: 50px;
+    }
+
+    .loginImage {
+        display: flex;
+    }
+
+
+    .loginForm {
+        display: flex;
+        flex: 0.5;
+        padding: 3rem;
+        flex-direction: column;
+
+    }
+    .formContainer {
+        flex: 0.4;
+    }
+    .formContainerLg {
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .app {
+        padding: 0;
+    }
+
+    .loginContainer {
+        flex-direction: row;
+        height: cal(100vh - 10rem);
+        border-radius: 50px;
+    }
+
+    .loginImage {
+        display: flex;
+    }
+
+
+    .loginForm {
+        display: flex;
+        flex: 0.6;
+        padding: 3rem;
+        flex-direction: column;
+
+    }
+    .formContainer {
+        flex: 0.4;
+    }
+    .formContainerLg {
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .app {
+        padding: 0;
+    }
+
+    .loginContainer {
+        flex-direction: column;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    .loginImage {
+        display: none;
+    }
+
+    .loginForm {
+        display: flex;
+        flex: 1;
+        padding: 1rem;
+        flex-direction: column;
+
+    }
+    .formContainer {
+        flex: 0.4;
+    }
+    .formContainerLg {
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .app {
+        padding: 0;
+    }
+
+    .loginContainer {
+        flex-direction: column;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    .loginImage {
+        display: none;
+    }
+
+    .loginForm {
+        display: flex;
+        flex: 1;
+        padding: 1rem;
+        flex-direction: column;
+
+    }
+    .formContainer {
+        flex: 1;
+    }
+    .formContainerLg {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .app {
+        padding: 0;
+    }
+
+    .loginContainer {
+        flex-direction: column;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    .loginImage {
+        display: none;
+    }
+
+    .loginForm {
+        display: flex;
+        flex: 1;
+        padding: 1rem;
+        flex-direction: column;
+
+    }
+    .formContainer {
+        flex: 1;
+    }
+    .formContainerLg {
+        flex: 1;
+    }
+
+}

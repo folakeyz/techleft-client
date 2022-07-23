@@ -1,0 +1,144 @@
+.cardContainer {
+    width: 100%;
+    display: flex;
+    flex-basis: 48%;
+    background: white;
+    border-radius: 10px;
+    min-height: 8rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.cardContainer:hover {
+    transform: scale(1.1);
+}
+
+.circleContainer {
+    display: flex;
+    flex: 0.3;
+    align-items: center;
+    justify-content: center;
+}
+
+.oCircle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 50%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle svg {
+    font-size: 1.5rem;
+}
+
+.textContainer {
+    display: flex;
+    flex: 0.7;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.textContainer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* colors */
+.red {
+    background: linear-gradient(0deg, rgba(254, 101, 61, .6), rgba(244, 69, 92, .6));
+    color: white;
+}
+
+.blue {
+    background: linear-gradient(0deg, rgba(24, 181, 243, 1), rgba(24, 126, 243, 1));
+    color: white;
+}
+
+.green {
+    background: linear-gradient(0deg, rgba(28, 238, 122, 1), rgba(66, 193, 101, 1));
+    color: white;
+}
+
+.purple {
+    background: linear-gradient(0deg, rgba(196, 94, 213, 1), rgba(150, 96, 242, 1));
+    color: white;
+}
+
+.lightGold {
+    background: linear-gradient(0deg, rgba(220, 197, 151, .8), rgba(220, 197, 151, .8));
+    color: white;
+}
+
+.dpurple {
+    background: #F2EBFB;
+    color: #713BDB;
+}
+
+.cyan {
+    background: #EEF9FF;
+    color: #49B8FF;
+}
+
+
+.gold {
+    background: #FFF4EE;
+    color: #FFCA6F;
+}
+
+.crimson {
+    background: #FFEFF2;
+    color: #FD5181;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .cardContainer {
+        flex-basis: 47%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .cardContainer {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .cardContainer {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cardContainer {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .cardContainer {
+        flex-basis: 100%;
+    }
+
+}

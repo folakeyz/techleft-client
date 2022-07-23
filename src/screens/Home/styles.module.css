@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+    padding: 5rem 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.textContainer{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    justify-content: center;
+}
+.textContainer h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.textContainer h4{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.imageContainer{
+    display: flex;
+    flex: 0.4;
+}
+.imageContainer img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Media Query */
+
+
+
+@media screen and (max-width: 1300px) {
+    .container{
+        display: flex;
+        padding: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .textContainer h3{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .textContainer h4{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .container{
+        display: flex;
+        padding: 3rem 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .textContainer h3{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .textContainer h4{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        display: flex;
+        padding: 2rem 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .textContainer h3{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .textContainer h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+    .container{
+        display: flex;
+        padding: 2rem 3rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .textContainer h3{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .textContainer h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    .textContainer h3{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .textContainer h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container{
+        display: flex;
+        padding: 2rem;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    .textContainer h3{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .textContainer h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}

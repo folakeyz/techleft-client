@@ -1,0 +1,64 @@
+.day {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    align-items: flex-end;
+    padding: 1rem 0;
+
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding: .1rem 1rem;
+}
+
+.badge {
+    width: 35px;
+    height: 35px;
+    background: royalblue;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: .5rem;
+}
+
+.plus {
+    display: flex;
+    padding: .5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.plus span {
+    text-align: left;
+}
+
+.Pending {
+    background: #81D4F7;
+    color: white;
+}
+
+.Started {
+    background: #00AFEF;
+    color: white;
+}
+
+.Dropped {
+    background: #FD5181;
+    color: white;
+}
+
+.Edited {
+    background: #F8CF2A;
+    color: white;
+}

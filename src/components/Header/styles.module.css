@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    padding: 1rem .5rem;
+    justify-content: space-between;
+}
+
+.pageTitle {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pageTitle h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dp {
+    width: 50px;
+    height: 50px;
+    background: #2553FF;
+    border-radius: 50%;
+    margin-right: .5rem;
+}

@@ -1,0 +1,20 @@
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.textContainer p{
+    color: #4b4a49;
+}
+.textContainer h4{
+    color: black;
+}
+.small {
+    flex-basis: 32%;
+  }
+  .meduim {
+    flex-basis: 50%;
+  }
+  .large {
+    flex-basis: 100%;
+  }
