@@ -123,7 +123,7 @@ export const RegisterUser = (email, password, is_staff) => async (dispatch) => {
   }
 };
 
-export const DemoAcct = (name, email, mobile, location, industry) => async (dispatch) => {
+export const DemoAcct = (first_name,last_name,email, mobile, location, industry) => async (dispatch) => {
   try {
     dispatch({ type: DEMO_REQUEST });
 
@@ -134,8 +134,8 @@ export const DemoAcct = (name, email, mobile, location, industry) => async (disp
       },
     };
     const { data } = await axios.post(
-      `${BASE_URL}/demo/`,
-      { name, email, mobile, location, industry },
+      `${BASE_URL}/user/trial`,
+      { first_name,last_name, email, mobile, location, industry },
       config
     );
     dispatch({

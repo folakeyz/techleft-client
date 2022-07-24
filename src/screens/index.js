@@ -13,6 +13,7 @@ export { default as Department } from "./Department";
 export { default as Client } from "./Client";
 export { default as AddClient } from "./Client/Add";
 export { default as ManageClient } from "./Client/Manage";
+export { default as BatchClient } from "./Client/Batch";
 export { default as Employees } from "./Employees";
 export { default as AddEmployees } from "./Employees/Add";
 export { default as BatchEmployee } from "./Employees/Batch";

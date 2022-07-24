@@ -15,7 +15,8 @@ const Demo = () => {
   const navigate = useNavigate();
 
   // Form Fields OnChange
-  const [name, setName] = useState("");
+  const [first_name, setFirstName] = useState("");
+  const [last_name, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [location, setLocation] = useState("");
@@ -24,7 +25,7 @@ const Demo = () => {
   // Login Handler
   const loginHandler = (e) => {
     e.preventDefault();
-    if (!name || !email || !mobile || !location || !industry) {
+    if (!first_name || !last_name || !email || !mobile || !location || !industry) {
       toast({
         title: "Warning",
         description: "All Fields are required",
@@ -34,7 +35,7 @@ const Demo = () => {
         position: "top-right",
       });
     } else {
-      dispatch(DemoAcct(name, email, mobile, location, industry));
+      dispatch(DemoAcct(first_name,last_name,email, mobile, location, industry));
     }
   };
 
@@ -58,8 +59,8 @@ const Demo = () => {
   }
   if (success) {
     toast({
-      title: "Notification",
-      description: "Account Created Successfully",
+      title: "Thanks",
+      description: "You would be contacted shortly",
       status: "success",
       duration: 9000,
       isClosable: true,
@@ -91,10 +92,18 @@ const Demo = () => {
                 <div className="techleft__InputFlex">
                 <Input
                 type="text"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
+                onChange={(e) => setFirstName(e.target.value)}
+                value={first_name}
                 required={true}
-                title="Name"
+                title="First Name"
+                Icon={FaUser}
+              />
+               <Input
+                type="text"
+                onChange={(e) => setLastName(e.target.value)}
+                value={last_name}
+                required={true}
+                title="Last Name"
                 Icon={FaUser}
               />
               <Input

@@ -29,6 +29,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import { FaCogs, FaPlusCircle, FaTrash, FaWrench } from "react-icons/fa";
+import { BsFillCloudUploadFill } from "react-icons/bs";
 
 const Client = () => {
   const navigate = useNavigate();
@@ -182,6 +183,10 @@ const Client = () => {
               <div className="btnContainer right">
                 <Link to="/app/client/add" className="btnSM color2">
                   <FaPlusCircle /> &nbsp; Add Client
+                </Link>
+                <Link to="/app/client/batch" className="btnSM color2">
+                  <BsFillCloudUploadFill />
+                  &nbsp;&nbsp;Batch Upload
                 </Link>
               </div>
               <MaterialTable

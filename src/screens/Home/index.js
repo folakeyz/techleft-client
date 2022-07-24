@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, TopNav } from "../../components";
+import { TopNav } from "../../components";
 import styles from "./styles.module.css";
 import { Link,} from "react-router-dom";
 import image from '../../assets/image.webp'
@@ -23,8 +23,7 @@ const Home = () => {
             </div>
             </div>
         <div className={styles.imageContainer}>
-         <img src={image} alt="Image" />
-          
+         <img src={image} alt="Employee Schedule" /> 
         </div>
       </div>
     </div>

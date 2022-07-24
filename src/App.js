@@ -24,7 +24,7 @@ import {
   MyClients,
   Home,
   Demo,
-  Invite
+  Invite,BatchClient
 } from "./screens";
 
 function App() {
@@ -48,6 +48,7 @@ function App() {
           <Route path="/app/branch" exact element={<Branch />} />
           <Route path="/app/department" exact element={<Department />} />
           <Route path="/app/client" exact element={<Client />} />
+          <Route path="/app/client/batch" exact element={<BatchClient />} />
           <Route path="/app/client/add" exact element={<AddClient />} />
           <Route
             path="/app/client/:clientID"
