@@ -1,8 +1,8 @@
 .container{
     display: flex;
     padding: 5rem 10rem;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+   
 }
 .textContainer{
     display: flex;
@@ -27,6 +27,41 @@
     width: 100%;
     border-radius: 20px;
 }
+.title{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.benefits{
+    display: flex;
+}
+.bImg{
+    display: flex;
+    flex: 0.5;
+}
+.bText {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    padding: 2rem;
+}
+.bText h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom:1rem ;
+}
+.bText p{
+    font-size: 13px;
+}
+
 
 /* Media Query */
 

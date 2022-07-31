@@ -375,6 +375,11 @@ button:disabled {
   color: black;
 }
 
+.white{
+  background: white;
+  color: black;
+}
+
 .appContainer {
   display: flex;
   height: 100vh;

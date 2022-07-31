@@ -19,3 +19,5 @@ export { default as CalendarAllMonth } from "./Calendar/Month/All";
 export { default as TopNav } from "./TopNav";
 export { default as Greeting } from "./Greeting";
 export { default as MenuBar } from "./MenuBar";
+export { default as Hero } from "./Hero";
+export { default as Features } from "./Features";
