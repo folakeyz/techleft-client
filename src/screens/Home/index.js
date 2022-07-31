@@ -34,7 +34,7 @@ const Home = () => {
           <h1 className={styles.title}>Benefits</h1>
           <div className={styles.benefits}>
             <div className={styles.bImg}>
-              <img src="" alt="Benefits" />
+              <img src={image2} alt="Benefits" />
             </div>
             <div className={styles.bText}>
               <h1>Reduced patient/client abandonment and neglect</h1>
@@ -71,7 +71,7 @@ const Home = () => {
 
           <div className={styles.benefits}>
             <div className={styles.bImg}>
-              <img src="" alt="Benefits" />
+              <img src={image4} alt="Benefits" />
             </div>
             <div className={styles.bText}>
               <h1>Secure patient/client data</h1>
