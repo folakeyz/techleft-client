@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Input, Button, TopNav } from "../../../components";
+import { Input, Button, TopNav, Textarea } from "../../../components";
 import styles from "../styles.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";
 import { DemoAcct } from "../../../redux/actions/userActions";
 import { useDispatch, useSelector } from "react-redux";
 import { DEMO_RESET } from "../../../redux/constants/userConstants";
-import { FaEnvelope,FaUser,FaMobileAlt,FaMapMarkerAlt,FaBuilding } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaUser,
+  FaMobileAlt,
+  FaMapMarkerAlt,
+  FaBuilding,
+} from "react-icons/fa";
 
 const Demo = () => {
   // Helpers
@@ -25,7 +31,14 @@ const Demo = () => {
   // Login Handler
   const loginHandler = (e) => {
     e.preventDefault();
-    if (!first_name || !last_name || !email || !mobile || !location || !industry) {
+    if (
+      !first_name ||
+      !last_name ||
+      !email ||
+      !mobile ||
+      !location ||
+      !industry
+    ) {
       toast({
         title: "Warning",
         description: "All Fields are required",
@@ -35,7 +48,9 @@ const Demo = () => {
         position: "top-right",
       });
     } else {
-      dispatch(DemoAcct(first_name,last_name,email, mobile, location, industry));
+      dispatch(
+        DemoAcct(first_name, last_name, email, mobile, location, industry)
+      );
     }
   };
 
@@ -88,9 +103,9 @@ const Demo = () => {
             </h3>
           </div> */}
           {/* <div className="techleft__InputContainer"> */}
-            <form onSubmit={loginHandler}>
-                <div className="techleft__InputFlex">
-                <Input
+          <form onSubmit={loginHandler}>
+            <div className="techleft__InputFlex">
+              <Input
                 type="text"
                 onChange={(e) => setFirstName(e.target.value)}
                 value={first_name}
@@ -98,7 +113,7 @@ const Demo = () => {
                 title="First Name"
                 Icon={FaUser}
               />
-               <Input
+              <Input
                 type="text"
                 onChange={(e) => setLastName(e.target.value)}
                 value={last_name}
@@ -124,22 +139,21 @@ const Demo = () => {
               />
               <Input
                 type="text"
-                onChange={(e) => setLocation(e.target.value)}
-                value={location}
-                required={true}
-                title="Location"
-                Icon={FaMapMarkerAlt}
-              />
-              <Input
-                type="text"
                 onChange={(e) => setIndustry(e.target.value)}
                 value={industry}
                 required={true}
-                title="Industry"
+                title="Company Name"
                 Icon={FaBuilding}
               />
+              <Textarea
+                onChange={(e) => setLocation(e.target.value)}
+                value={location}
+                required={true}
+                title="Address"
+                Icon={FaMapMarkerAlt}
+              />
 
-               <Button
+              <Button
                 title="Request a Demo"
                 type="submit"
                 color="yellow"
@@ -147,16 +161,14 @@ const Demo = () => {
                 isFullWidth={true}
                 label={true}
               />
-                
-                </div>
-           
-             
-              <div className={`${styles.padding} ${styles.center}`}>
-                <Link to="/login">Already have an account? Sign in</Link>
-              </div>
-            </form>
-          </div>
+            </div>
+
+            <div className={`${styles.padding} ${styles.center}`}>
+              <Link to="/login">Already have an account? Sign in</Link>
+            </div>
+          </form>
         </div>
+      </div>
       {/* </div> */}
     </div>
   );

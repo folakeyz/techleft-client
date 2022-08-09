@@ -46,12 +46,18 @@
 .bImg{
     display: flex;
     flex: 0.5;
+    max-height: 30rem;
+}
+.bImg img{
+    width: 100%;
+    object-fit: cover;
+max-height: 30rem;
 }
 .bText {
     display: flex;
     flex: 0.5;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0;
 }
 .bText h1{
     font-size: 1.5rem;
@@ -60,6 +66,17 @@
 }
 .bText p{
     font-size: 13px;
+    line-height: 3rem;
+}
+.padding{
+    padding: 3rem 5rem;
+}
+.footer{
+    display: flex;
+    padding: 2rem;
+    background: #35434C;
+    color: white;
+    justify-content: center;
 }
 
 

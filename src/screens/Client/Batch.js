@@ -36,7 +36,6 @@ const BatchClient = () => {
   const { myCompany = [] } = getCompany;
   const company = myCompany[0] ? myCompany[0].id : "";
 
-
   const [upload, setUpload] = useState(false);
   const [info, setInfo] = useState(false);
 
@@ -67,7 +66,6 @@ const BatchClient = () => {
     navigate("/app/client");
     dispatch({ type: CREATE_CLIENT_RESET });
   }
-
 
   useEffect(() => {
     dispatch(getMyCompany());
@@ -108,11 +106,7 @@ const BatchClient = () => {
 
   const submitHandler = () => {
     for (let i = 0; i < data.length; i++) {
-      if (
-        data[i]["Name"] &&
-        data[i]["Email"] &&
-        data[i]["Phone"]
-      ) {
+      if (data[i]["Name"] && data[i]["Email"] && data[i]["Phone"]) {
         let name = data[i]["Name"];
         let email = data[i]["Email"];
         let address = data[i]["Address"];
@@ -123,16 +117,16 @@ const BatchClient = () => {
         let phone = data[i]["Phone"];
 
         createClient(
-            company,
-            name,
-            email,
-            phone,
-            address,
-            province,
-            country,
-            postal_code,
-            join_date
-          )
+          company,
+          name,
+          email,
+          phone,
+          address,
+          province,
+          country,
+          postal_code,
+          join_date
+        );
       }
     }
   };
@@ -144,11 +138,11 @@ const BatchClient = () => {
     <div className="appContainer">
       <Navigation />
       <div className="contentsRight">
-        <Header pageTitle="Employee Batch Upload" />
+        <Header pageTitle="Client Batch Upload" />
         <div className={styles.company}>
           <div className={styles.branch}>
             <div className="btnContainer">
-              <Link to="/app/employees" className="btnSM color1">
+              <Link to="/app/client" className="btnSM color1">
                 Go Back
               </Link>
             </div>

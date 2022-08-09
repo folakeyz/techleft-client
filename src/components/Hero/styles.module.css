@@ -1,8 +1,9 @@
 .hero{
     display: flex;
     padding: 5rem;
-    background: var(--techleftblue);
+    background: var(--techleftlblue);
     color: white;
+    margin-bottom: 5rem;
 }
 .textContainer {
     display: flex;

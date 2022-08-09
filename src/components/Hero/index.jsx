@@ -6,10 +6,11 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
        <div className={styles.textContainer}>
-          <h3>
+        <h5 className="danger">SOLUTION</h5>
+        <h3>Human Resource Management (HRM)</h3>
+          <p>
             K<span className="danger">NO</span>W MISSED VISITS
-          </h3>
-          <h4>and cross-institutional support WORKERS DOUBLE-BOOKING?</h4>
+          and cross-institutional support WORKERS DOUBLE-BOOKING?</p><br />
           <p>
             HRTECHLEFT is a Long-term and In-home Care Collaborative Remote
             Monitoring platform.
