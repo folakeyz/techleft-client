@@ -22,3 +22,35 @@
     font-weight: 600;
     margin-bottom: .5rem;
 }
+
+
+@media screen and (max-width: 1300px) {
+.hero {
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+.hero {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+.hero {
+        padding: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+.hero {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+.hero {
+        padding: 2rem;
+    }
+}

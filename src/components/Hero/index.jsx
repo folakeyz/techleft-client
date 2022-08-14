@@ -11,10 +11,10 @@ const Hero = () => {
           <p>
             K<span className="danger">NO</span>W MISSED VISITS
           and cross-institutional support WORKERS DOUBLE-BOOKING?</p><br />
-          <p>
+          {/* <p>
             HRTECHLEFT is a Long-term and In-home Care Collaborative Remote
             Monitoring platform.
-          </p>
+          </p> */}
           <div className="btnContainer">
             <Link to="/request-a-demo" className="btn white">
               Request a Demo
