@@ -25,7 +25,7 @@ const Home = () => {
               <h1>Mitigate patient/client abandonment and neglect</h1>
               <p>
                 Long-term and in-home care recipients (mostly the aging and
-                disabled persons) across the country do miss supposed visits by
+                disabled persons) across the country do miss supposed visits of
                 support workers, which sometimes happens continually. The
                 problem is one of patient/client abandonment and neglect
                 connected to the fact that support workers could be working for

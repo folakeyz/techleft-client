@@ -1,9 +1,11 @@
 .hero{
     display: flex;
     padding: 5rem;
-    background: var(--techleftlblue);
-    color: white;
+    background: linear-gradient(270deg, rgba(245,245,245,1),rgba(230,230,230,1));
+    /* color: white; */
     margin-bottom: 5rem;
+    background-position: right;
+    justify-content: space-between;
 }
 .textContainer {
     display: flex;
@@ -11,10 +13,21 @@
     flex-direction: column;
     justify-content: center;
 }
+.imgContainer{
+    display: flex;
+    flex: 0.4;
+    max-height: 20rem;
+    overflow:hidden ;
+}
+.imgContainer img{
+    width: 100%;
+    object-fit: cover;
+}
 
 .textContainer h3 {
     font-size: 3rem;
     font-weight: 600;
+    color: black;
 }
 
 .textContainer h4 {

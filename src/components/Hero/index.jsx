@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 import { Link } from 'react-router-dom'
+import logo from '../../assets/logo.png'
 
 const Hero = () => {
   return (
@@ -24,6 +25,9 @@ const Hero = () => {
               Learn More
             </a>
           </div>
+        </div>
+        <div className={styles.imgContainer}>
+          <img src={logo} alt="Logo" />
         </div>
     </div>
   )
